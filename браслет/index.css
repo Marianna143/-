@@ -1,0 +1,199 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+    font-family: 'Akshar', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* START STYLE FOR HEADER */
+.header{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background: #DF38B1;
+    /* font-family: 'Macondo', cursive; */
+}
+.imeg{
+	background: url(./img/9.png);
+	width: 100px;
+	height: 100px;
+    display: flex;
+    margin-left: 20%;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto; 
+    flex-direction: column;
+}
+.menu-item{
+    list-style: none;
+    margin-left: 10%;
+    list-style-type: disc;
+}
+.menu-link{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    bottom: 0;
+    /* font-family: 'Macondo', cursive; */
+}
+.menu-link {
+    /* reset */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(183, 255, 0) 50%, rgb(238, 255, 153) 50%);
+    background-size: 200% 3px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition: background-position 0.3s;
+  }
+  
+  .menu-link:hover {
+    background-position: 0% 100%;
+  }
+  
+  li {
+    max-width: 480px;
+    margin: 0px auto;
+    font-size: 20px;
+  }
+/* END STYLE FOR HEADER */
+/* START STYLE FOR BANNER */
+.banner-section{
+    background: url(./img/ban.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin: 0;
+}
+.banner-title, .banner-description{
+    text-align: center;
+    color: #1c0a1c;
+}
+.banner-title{
+    font-size: 48px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #000000; 
+    /* font-family: 'Akshar', sans-serif; */
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Macondo', cursive;
+}
+.banner-description{
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #000000;
+}
+/* END STYLE FOR BANNER */
+/* START STYLE FOR CARDS */
+.cards-section{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.card{
+    width: 25%;
+    /* box-shadow: сдвиг по Х, сдвиг по У, размытие, растяжение, цвет */
+    box-shadow: 0px 2px 7px 0px #BE008A; 
+    margin-top: 25px;
+    padding: 25px;
+    text-align: center;
+    /* Изменения от Алены */
+    /* display: flex; */
+}
+.card-title, .card-text{
+    margin-bottom: 10px;
+    /* font-family: 'Akshar', sans-serif;  */
+}
+/* .card-text{
+    
+} */
+.card-button{
+    background: #BE008A;
+    padding: 10px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+/* Изменения от Алены */
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+/* Конец */
+
+.card-link{
+    color: white;
+    text-decoration: none;
+    align-content: stretch;
+    
+}
+.cards-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* END STYLE FOR CARDS */
+/* START STYLE FOR FOOTER */
+.footer{
+    background: #7C005A;
+    background-size: cover;
+    padding: 100px 0;
+}
+.footer-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    margin-right: 50px;
+	padding: 10px;
+}
+.icons{
+    justify-content: flex-end;
+}
+.copyright{
+    color: #f6f2f1;
+	padding: 10px;
+	
+}
+/* END STYLE FOR FOOTER */
+
+@media screen and (max-width: 850px) {
+    .header{
+        width: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+    
+    /* .header-menu{
+       
+    } */
+    .header-row{
+        display: flex;
+        justify-content: center;
+    }
+    .cards-row{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card, .img{
+        width: auto;
+    }
+    .search,.footer-search-input,.footer-search-button,.social-networks{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .footer-row,.footer-search{
+        flex-wrap: wrap;
+    }
+    .footer-information, .icon{
+        flex-wrap: wrap;
+		bottom: auto;
+    }
+}
